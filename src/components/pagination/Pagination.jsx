@@ -1,18 +1,19 @@
 import React from 'react';
 import { ArrowNextPage } from '../../styles/Buttons.style';
 import { ArrowPrevPage } from '../../styles/Buttons.style.js';
+import { PaginationContainer } from '../../styles/Pagination.style';
 
-export default function Pagination({offset, limit, handlePrevPage, handleNextPage}) {
+export default function Pagination({ limit, limitInf, handlePrevPage, handleNextPage}) {
 
   // console.log('offset, limit :>> ', offset, limit);
 
   return (
-    <>
-      <ArrowPrevPage/>
+    <PaginationContainer>
+      <ArrowPrevPage onClick={ (e) => handlePrevPage(e)}/>
       <div>
-          {offset+1} / {limit} 
+          {limitInf+1} / {limit} 
       </div>
       <ArrowNextPage onClick={ (e) => handleNextPage(e) }/>
-    </>
+    </PaginationContainer>
   )
 }

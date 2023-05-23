@@ -10,23 +10,25 @@ const REACT_APP_COMPLEMENTURL = "v1/public/comics";
 const REACT_APP_TS = "1684794419"
 
 export async function fetchingData(
-        offset = 0,
-        limit = 5,
-
+        limitInf,
+        limit,
     ) {
       try {
+        console.log('limitInf, limit :>> ', limitInf, limit);
         const dataTest = await axios.get(
-          `${REACT_APP_SERVER}/${REACT_APP_COMPLEMENTURL}?ts=${REACT_APP_TS}&apikey=${REACT_APP_PUBLIC}&hash=${REACT_APP_HASH}&offset=${offset}&limit=${limit}`
+          `${REACT_APP_SERVER}/${REACT_APP_COMPLEMENTURL}?ts=${REACT_APP_TS}&apikey=${REACT_APP_PUBLIC}&hash=${REACT_APP_HASH}&limit=${limit}`
         );
-    
-        return dataTest;
+        const response = dataTest.data.data.results;
+        const infoRequested = response.slice(limitInf, limit)
+        console.log('dataTest :>> ', infoRequested);
+        return infoRequested;
       } catch (error) {
         return error;
       }
     }
 
-export const useFetchPets = (filters) => {
-  return useQuery(["pets", filters], async () => await fetchingData(filters), {
+export const useFetchData = (limitInf, limit) => {
+  return useQuery(["data" ], async () => await fetchingData(limitInf, limit), {
     refetchOnWindowFocus: false,
   });
 };
