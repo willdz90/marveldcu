@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  font-family: 'Beaufort for LOL';
+  font-style: normal;
+  font-weight: 500;
+  line-height: 114%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('./assets/Fondo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
