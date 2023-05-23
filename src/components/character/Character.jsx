@@ -1,18 +1,18 @@
-import React from 'react'
+import React from 'react';
+import CardCharacter from './CardCharacter.jsx';
+import { CardContainer } from '../../styles/CardCharacter.style.js';
 
 export default function Character({charactersList}) {
 
     // console.log('arrayCharacters :>> ', charactersList);
 
     return (
-        <>{
+        <CardContainer>{
             charactersList?.map((p) => {
                 return (
-                    <div key={p.id}>
-                        {p.title}
-                    </div>
+                    <CardCharacter key={p.id} infoCharacter={p}/>
                 )
             })
-        }</>
+        }</CardContainer>
     )
 }

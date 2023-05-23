@@ -1,28 +1,25 @@
 import React, { useEffect, useState } from 'react';
-import { fetchingData } from '../../functions/Data.js';
 import Character from './Character.jsx';
 import Pagination from '../pagination/Pagination.jsx';
 import { useFetchData } from '../../functions/Data.js';
 
 export default function CharacterContainer() {
 
+  //Local states
   const [ limitInf, setLimitInf ] = useState(0)
   const [ limit, setlimit ] = useState(5);
   const { data: comics, isLoading } = useFetchData(limitInf, limit);
-  const [ info, setInfo ] = useState([]);
 
+  //this constant is used for monitoring changes into the data
   const fullresponse = useFetchData(limitInf, limit)
-  let comicsList = !isLoading ? comics : null;
   let fetching = fullresponse.isFetching;
+  
+  //let's create our list of comics
+  let comicsList = !isLoading ? comics : null;
 
   useEffect(()=> {
     fullresponse.refetch();
   },[limit])
-
-  useEffect( () => {
-    setInfo(comicsList)
-  }, [isLoading,limit])
-
 
   //Functions for handle the pagination
   const handleNextPage = (e) => {
