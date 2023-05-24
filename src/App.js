@@ -20,13 +20,6 @@ const queryClient = new QueryClient()
 
 function App() {
 
-  // const Button = styled.button`
-  //   width: 34px;
-  //   height: 34px;
-  //   left: 632px;
-  //   top: 839px;
-  // `;
-
   return (
     <QueryClientProvider client={queryClient}>
       <Router>

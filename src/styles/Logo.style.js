@@ -7,21 +7,6 @@ export const Logo = styled.img`
     height: auto;
 `;
 
-export const Logo2 = styled.h1`
-    content: "LOGO MARVEL";
-    color: white;
-`;
-
-export const Personajes = styled.span`
-    color: #C89B3C;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 100%;
-    text-align: center;
-    letter-spacing: 2px;
-`;
 
 /* Dorado 3 */
 

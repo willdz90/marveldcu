@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Character from './Character.jsx';
 import Pagination from '../pagination/Pagination.jsx';
 import { useFetchData } from '../../functions/Data.js';
+import Loading from '../Loading/Loading.jsx';
 
 export default function CharacterContainer() {
 
@@ -38,7 +39,7 @@ export default function CharacterContainer() {
     <>
       {
         fetching
-        ? <div>CARGANDO.....</div> :
+        ? <Loading/> :
         <Character charactersList={comicsList}/> 
       }
       <Pagination 

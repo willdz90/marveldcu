@@ -9,7 +9,7 @@ body {
   background-image: url('./assets/Fondo.png');
   background-repeat: no-repeat;
   background-size: cover;
-
+  width: auto;
 }
 
 code {
