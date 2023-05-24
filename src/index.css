@@ -6,13 +6,23 @@ body {
   line-height: 114%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('./assets/Fondo.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: auto;
+  width: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
+}
+
+html{
+  background: radial-gradient(82.53% 82.53% at 50% 91.99%, #19488F 44.09%, #000000 100%);
+  /* background-image: url('./assets/FondoLayer.png');
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.bg-image{
+  width: 100%;
+  height: auto;
+  position: relative;
 }

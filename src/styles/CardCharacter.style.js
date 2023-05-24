@@ -39,6 +39,7 @@ export const Card = styled.div`
     text-align: center;
     border: 0.75px solid #3C3C41;
     border-radius: 5px;
+    opacity: 0.95;
 `;
 
 export const TitleCard = styled.div`
@@ -50,6 +51,8 @@ export const Avatar = styled.img`
     height: 16vh;
     border-radius: 50%;
     border: 0.75px solid #3C3C41;
+    position: absolute;
+    top: 76.7vh;
 `;
 
 export const AvatarExt = styled.div`
@@ -64,7 +67,9 @@ export const AvatarExt = styled.div`
     -webkit-box-align: center;
     align-items: center;
     justify-content: space-around;
-    /* animation: ${rotate} 5s linear infinite; */
+    &:hover{
+        animation: ${rotate} 3s linear infinite;
+    }
 `;
 
 export const AvatarExt2 = styled.div`

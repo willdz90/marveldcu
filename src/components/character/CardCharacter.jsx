@@ -16,12 +16,8 @@ export default function CardCharacter({infoCharacter}) {
             <ImgName src={nombreIzq}/><Info>{infoCharacter.name}</Info><ImgName src={nombreDer}/>
         </TitleCard>
         <AvatarContainer>
-            <div>
-            <AvatarExt>
-                <Avatar src={imgPath}/>
-            </AvatarExt>
-
-            </div>
+            <AvatarExt/>
+            <Avatar src={imgPath}/>
         </AvatarContainer>
         <InfoComics>Comics: <TextDetail>{infoCharacter.comics.available}</TextDetail></InfoComics>
         <InfoSeries>Series: <TextDetail>{infoCharacter.series.available}</TextDetail></InfoSeries>

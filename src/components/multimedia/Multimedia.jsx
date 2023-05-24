@@ -15,10 +15,10 @@ export default function Multimedia() {
             width="358" 
             height="218" 
             src="https://www.youtube.com/embed/dagPKfcYHn4" 
-            title="Ultimate Invasion #1 Trailer | Marvel Comics" 
-            frameborder="0" 
+            title="Ultimate Invasion #1 Trailer | Marvel Comics"
+            frameBorder={0}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
+            allowFullScreen>
           </iframe>
         </VideoContainer>
         <ImageContainer/>

@@ -35,7 +35,6 @@ export const Home = styled.div`
     color: white;
     height: 100%;
     cursor: pointer;
-
 `;
 
 export const HomeText = styled.span`
