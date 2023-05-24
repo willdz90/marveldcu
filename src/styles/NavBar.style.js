@@ -1,4 +1,8 @@
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
+
+
+
 
 export const NavBarContainer = styled.nav`
     width: 100%;
@@ -53,11 +57,6 @@ export const HomeText = styled.span`
     align-items: center;
     cursor: pointer;
 
-    ${Home}:hover & {
-        color: #C89B3C;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        background: linear-gradient(180deg, #231F20 0%, rgba(34, 34, 34, 0) 100%);
-    }
 `;
 
 export const Personajes = styled.div`
@@ -93,4 +92,50 @@ export const TextPersonajes = styled.span`
 
 export const changeColor = styled.div`
 
+`;
+
+export const StyledLink = styled(Link)`
+    text-decoration: none;
+    display: flex;
+    letter-spacing: 2px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    height: 100%;
+    cursor: pointer;
+    color: white;
+    &:focus, &:hover, &:visited, &:link, &:active {
+        text-decoration: none;
+    }
+
+    ${Home}:hover & {
+        color: #C89B3C;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        background: linear-gradient(180deg, #231F20 0%, rgba(34, 34, 34, 0) 100%);
+    }
+`;
+
+export const StyledLinkCharacters = styled(Link)`
+    text-decoration: none;
+    display: flex;
+    letter-spacing: 2px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    height: 100%;
+    cursor: pointer;
+    color: white;
+    &:focus, &:hover, &:visited, &:link, &:active {
+        text-decoration: none;
+    }
+
+    ${Personajes}:hover & {
+        color: #C89B3C;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        background: linear-gradient(180deg, #231F20 0%, rgba(34, 34, 34, 0) 100%);
+    }
 `;

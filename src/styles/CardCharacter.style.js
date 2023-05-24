@@ -45,6 +45,7 @@ export const Card = styled.div`
 
 export const TitleCard = styled.div`
     display: flex;
+    align-items: center;
 `;
 
 export const Avatar = styled.img`

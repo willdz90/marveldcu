@@ -5,6 +5,7 @@ import { fetchingData } from './functions/Data';
 import Home from './components/Home/Home.jsx';
 import Character from './components/character/Character';
 import Header from './components/header/Header';
+import Loading from './components/Loading/Loading';
 import {
   useQuery,
   useMutation,
@@ -25,6 +26,7 @@ function App() {
         <Header/>
         <Routes>
           <Route path='/' element={<Home/>}/>
+          <Route path='/Home' element={<Loading/>}/>
         </Routes>
       </Router>
     </QueryClientProvider>

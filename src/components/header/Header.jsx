@@ -3,8 +3,8 @@ import { Logo2 } from '../../styles/Logo.style.js';
 import { Logo } from '../../styles/Logo.style.js';
 import logo from "../../assets/logo.png";
 import arrow from "../../assets/arrow.png";
-import notificacion from '../../assets/notificacion.png'
-import config from '../../assets/config.png'
+import notificacion from '../../assets/notificacion.png';
+import config from '../../assets/config.png';
 import { NavBarContainer, 
   LeftContainerbar, 
   RightContainerbar, 
@@ -14,11 +14,11 @@ import { NavBarContainer,
   Personajes,
   ChangeColor,
   TextPersonajes,
+  StyledLink, StyledLinkCharacters,
+  
 } from '../../styles/NavBar.style.js';
 
 export default function Header() {
-
-  // <img src={arrow}/>
 
   return (
     <div>
@@ -26,10 +26,10 @@ export default function Header() {
           <LeftContainerbar>
             <LogoMarvel src={logo}/>
             <Home>
-              <HomeText>HOME</HomeText>
+              <StyledLink to='/Home'>HOME</StyledLink>
             </Home>
             <Personajes>
-              <TextPersonajes>PERSONAJES</TextPersonajes>
+              <StyledLinkCharacters to="/">PERSONAJES</StyledLinkCharacters>
             </Personajes>
           </LeftContainerbar>
           <RightContainerbar>
