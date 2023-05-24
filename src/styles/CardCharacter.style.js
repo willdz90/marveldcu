@@ -21,7 +21,7 @@ export const ImgName = styled.img`
 
 export const CardContainer = styled.div`
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 `;
 

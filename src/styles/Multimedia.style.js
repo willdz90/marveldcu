@@ -10,21 +10,35 @@ export const MultimediaContainer = styled.nav`
 `;
 
 export const ProgressBarContainer = styled.div`
-    width: 38%;
-    height: 80%;
-    background: #1E2328;
+    display: flex;
+    width: 37%;
+    height: 76%;
+    background: rgb(30, 35, 40);
     border-radius: 5px;
+    align-items: center;
+    justify-content: center;
 `;
 export const VideoContainer = styled.div`
-    width: 28%;
-    height: 80%;
+    display: flex;
+    width: 27%;
+    height: 76%;
     background: #1E2328;
     border-radius: 5px;
+    align-items: center;
+    justify-content: center;
 `;
 export const ImageContainer = styled.div`
-    width: 28%;
-    height: 80%;
+    display: flex;
+    width: 27%;
+    height: 76%;
     background: #1E2328;
     border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+`;
+
+export const ImagePoster = styled.img`
+    width: 98%;
+    height: 98%;
 `;
 
