@@ -1,8 +1,18 @@
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
 
+export const NotificationIcon = styled.img`
+    margin: 0 12px;
+    width: 18%;
+    cursor: pointer;
+    
+`;
 
-
+export const ConfigIcon = styled.img`
+    margin: 0 12px;
+    width: 18%;
+    cursor: pointer;
+`;
 
 export const NavBarContainer = styled.nav`
     width: 100%;
@@ -23,6 +33,8 @@ export const LeftContainerbar = styled.div`
 export const RightContainerbar = styled.div`
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
 `;
 
 export const LogoMarvel = styled.img`
@@ -102,6 +114,7 @@ export const StyledLink = styled(Link)`
     justify-content: center;
     align-items: center;
     width: 100%;
+    font-size: 14px;
     color: white;
     height: 100%;
     cursor: pointer;
@@ -119,6 +132,7 @@ export const StyledLink = styled(Link)`
 
 export const StyledLinkCharacters = styled(Link)`
     text-decoration: none;
+    font-size: 13px;
     display: flex;
     letter-spacing: 2px;
     text-align: center;

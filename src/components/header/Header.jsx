@@ -14,8 +14,9 @@ import { NavBarContainer,
   Personajes,
   ChangeColor,
   TextPersonajes,
-  StyledLink, StyledLinkCharacters,
-  
+  StyledLink, StyledLinkCharacters, 
+  NotificationIcon, ConfigIcon
+
 } from '../../styles/NavBar.style.js';
 
 export default function Header() {
@@ -33,8 +34,8 @@ export default function Header() {
             </Personajes>
           </LeftContainerbar>
           <RightContainerbar>
-            <img src={notificacion}/> 
-            <img src={config}/> 
+            <NotificationIcon src={notificacion}/> 
+            <ConfigIcon src={config}/> 
           </RightContainerbar>
         </NavBarContainer>
     </div>
