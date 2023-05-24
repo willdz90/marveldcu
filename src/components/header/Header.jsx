@@ -1,4 +1,5 @@
 import React from 'react';
+import './Header.css';
 import { Logo2 } from '../../styles/Logo.style.js';
 import { Logo } from '../../styles/Logo.style.js';
 import logo from "../../assets/logo.png";
@@ -27,10 +28,10 @@ export default function Header() {
           <LeftContainerbar>
             <LogoMarvel src={logo}/>
             <Home>
-              <StyledLink to='/Home'>HOME</StyledLink>
+              <StyledLink to='/'>HOME</StyledLink>
             </Home>
             <Personajes>
-              <StyledLinkCharacters to="/">PERSONAJES</StyledLinkCharacters>
+              <StyledLinkCharacters to="/characters">PERSONAJES</StyledLinkCharacters>
             </Personajes>
           </LeftContainerbar>
           <RightContainerbar>

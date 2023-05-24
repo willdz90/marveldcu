@@ -1,11 +1,10 @@
 import styled from "styled-components";
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export const NotificationIcon = styled.img`
     margin: 0 12px;
     width: 18%;
     cursor: pointer;
-    
 `;
 
 export const ConfigIcon = styled.img`
@@ -98,7 +97,7 @@ export const TextPersonajes = styled.span`
     ${Personajes}:hover & {
         color: #C89B3C;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        background: linear-gradient(180deg, #231F20 0%, rgba(34, 34, 34, 0) 100%);
+        /* background: linear-gradient(180deg, #231F20 0%, rgba(34, 34, 34, 0) 100%); */
     }
 `;
 
@@ -106,7 +105,7 @@ export const changeColor = styled.div`
 
 `;
 
-export const StyledLink = styled(Link)`
+export const StyledLink = styled(NavLink)`
     text-decoration: none;
     display: flex;
     letter-spacing: 2px;
@@ -119,18 +118,18 @@ export const StyledLink = styled(Link)`
     height: 100%;
     cursor: pointer;
     color: white;
-    &:focus, &:hover, &:visited, &:link, &:active {
+    /* &:focus, &:hover, &:visited, &:link {
         text-decoration: none;
-    }
+    } */
 
     ${Home}:hover & {
         color: #C89B3C;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        background: linear-gradient(180deg, #231F20 0%, rgba(34, 34, 34, 0) 100%);
+        /* background: linear-gradient(180deg, #231F20 0%, rgba(34, 34, 34, 0) 100%); */
     }
 `;
 
-export const StyledLinkCharacters = styled(Link)`
+export const StyledLinkCharacters = styled(NavLink)`
     text-decoration: none;
     font-size: 13px;
     display: flex;
@@ -150,6 +149,6 @@ export const StyledLinkCharacters = styled(Link)`
     ${Personajes}:hover & {
         color: #C89B3C;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        background: linear-gradient(180deg, #231F20 0%, rgba(34, 34, 34, 0) 100%);
+        /* background: linear-gradient(180deg, #231F20 0%, rgba(34, 34, 34, 0) 100%); */
     }
 `;

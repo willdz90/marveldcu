@@ -19,6 +19,9 @@ html{
   /* background-image: url('./assets/FondoLayer.png');
   background-repeat: no-repeat;
   background-size: cover; */
+  ::-webkit-scrollbar {
+    display: none;
+}
 }
 
 .bg-image{
