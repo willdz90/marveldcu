@@ -11,7 +11,7 @@ import { useFetchDetails } from '../../functions/Data';
 export default function CardCharacter({infoCharacter}) {
 
   let imgPath = infoCharacter.thumbnail.path+".jpg";
-  const [isPopOpen, setIsPosOpen] = useState(false);
+  const [ isPopOpen, setIsPosOpen ] = useState(false);
   const [ id, setId ] = useState();
 
   function openModal(){
@@ -32,18 +32,16 @@ export default function CardCharacter({infoCharacter}) {
           <InfoComics>Comics: <TextDetail>{infoCharacter.comics.available}</TextDetail></InfoComics>
           <InfoSeries>Series: <TextDetail>{infoCharacter.series.available}</TextDetail></InfoSeries>
       </Card>
-      <CardModal
-          show={isPopOpen}
-          handleClose={() => setIsPosOpen(false)}
-          id={id}
-        >
-          <div style={{ color: "black"}}>
-
-            <h1>Pop Window #1 </h1>
-              1 reuseable styled component
-              2 easy implement
-          </div>
-      </CardModal>
+      {
+        !id && !isPopOpen ?
+        null :
+        <CardModal
+            show={isPopOpen}
+            handleClose={() => setIsPosOpen(false)}
+            infoDetails={infoCharacter}
+          >
+        </CardModal>
+      }
     </>
   )
 }

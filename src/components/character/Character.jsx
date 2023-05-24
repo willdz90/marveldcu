@@ -4,8 +4,6 @@ import { CardContainer } from '../../styles/CardCharacter.style.js';
 
 export default function Character({charactersList}) {
 
-    // console.log('arrayCharacters :>> ', charactersList);
-
     return (
         <CardContainer>{
             charactersList?.map((p) => {
