@@ -7,7 +7,10 @@ const REACT_APP_SERVER = "https://gateway.marvel.com/";
 const REACT_APP_PUBLIC = "84319dd0fede317df25f60367dca2880";
 const REACT_APP_HASH = "e18f405b4993489806185de4fe2553ac";
 const REACT_APP_COMPLEMENTURL = "v1/public/characters";
+const REACT_APP_COMPLEMENTURLDETAILS = "v1/public/characters/";
 const REACT_APP_TS = "1684794419"
+
+const urlById = "https://gateway.marvel.com/v1/public/characters/1009146?ts=1684794419&apikey=84319dd0fede317df25f60367dca2880&hash=e18f405b4993489806185de4fe2553ac"
 
 export async function fetchingData(
         limitInf,
@@ -23,14 +26,30 @@ export async function fetchingData(
       } catch (error) {
         return error;
       }
-    }
+}
+
+export async function fetchingComicDetails(id){
+  try {
+    const comicDetails = await axios.get(
+      `${REACT_APP_SERVER}/${REACT_APP_COMPLEMENTURLDETAILS}/${id}?ts=${REACT_APP_TS}&apikey=${REACT_APP_PUBLIC}&hash=${REACT_APP_HASH}`
+    );
+    console.log('comicDetails :>> ', comicDetails);
+  } catch (error) {
+    
+  }
+}
 
 export const useFetchData = (limitInf, limit) => {
-  return useQuery(["data" ], async () => await fetchingData(limitInf, limit), {
+  return useQuery(["data"], async () => await fetchingData(limitInf, limit), {
     refetchOnWindowFocus: false,
   });
 };
 
+export const useFetchDetails = (id) => {
+  return useQuery(["data"], async () => await fetchingComicDetails(id),{
+    refetchOnWindowFocus: false,
+  })
+}
 // function passArrayByUrl(filterArray) {
 //   var auxString = "{";
 //   if (filterArray.length !== 0) {

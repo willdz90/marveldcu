@@ -3,6 +3,7 @@ import rightArrow from '../assets/rightArrow.png';
 import leftArrow from '../assets/leftArrow.png';
 
 export const ArrowNextPage = styled.button`
+    cursor: pointer;
     width: 50px;
     height: 50px;
     border-radius: 25px;
@@ -11,6 +12,7 @@ export const ArrowNextPage = styled.button`
     background-repeat: no-repeat;
 `;
 export const ArrowPrevPage = styled.button`
+    cursor: pointer;
     width: 50px;
     height: 50px;
     border-radius: 25px;

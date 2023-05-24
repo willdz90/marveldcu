@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from '../header/Header';
 import Pagination from '../pagination/Pagination';
 import Multimedia from '../multimedia/Multimedia';
