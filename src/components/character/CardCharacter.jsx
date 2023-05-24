@@ -23,7 +23,6 @@ export default function CardCharacter({infoCharacter}) {
 
             </div>
         </AvatarContainer>
-        
         <InfoComics>Comics: <TextDetail>{infoCharacter.comics.available}</TextDetail></InfoComics>
         <InfoSeries>Series: <TextDetail>{infoCharacter.series.available}</TextDetail></InfoSeries>
     </Card>

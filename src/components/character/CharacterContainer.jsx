@@ -13,6 +13,7 @@ export default function CharacterContainer() {
 
   //this constant is used for monitoring changes into the data
   const fullresponse = useFetchData(limitInf, limit)
+  //We are going to use this response to handle the load of the data in the app
   let fetching = fullresponse.isFetching;
   
   //let's create our list of comics

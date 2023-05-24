@@ -12,8 +12,8 @@ export default function Multimedia() {
         <ProgressBarContainer>Barra de Peliculas</ProgressBarContainer>
         <VideoContainer>
           <iframe 
-            width="350" 
-            height="210" 
+            width="358" 
+            height="218" 
             src="https://www.youtube.com/embed/dagPKfcYHn4" 
             title="Ultimate Invasion #1 Trailer | Marvel Comics" 
             frameborder="0" 
@@ -21,9 +21,7 @@ export default function Multimedia() {
             allowfullscreen>
           </iframe>
         </VideoContainer>
-        <ImageContainer>
-          <ImagePoster src={poster}/>
-        </ImageContainer>
+        <ImageContainer/>
     </MultimediaContainer>
   )
 }
