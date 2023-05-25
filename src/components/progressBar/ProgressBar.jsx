@@ -28,7 +28,7 @@ export default function ProgressBar({ progress, max }) {
 
                 return newValue;
             });
-        }, 5000);
+        }, 1000);
 
 
     }, []);
