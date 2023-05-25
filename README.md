@@ -1,9 +1,8 @@
 # Getting Started with MARVEL DCU COMICS App
 This project was created using React, React query and the styles were given by Styled Components.
 
-              https://marveldcu.vercel.app/
-
-
+                  https://marveldcu.vercel.app/
+              
 Initially you are going to redirect to the Homepage, this is a single page to show the multimedia info of the app, next to the homepage in the menu bar into the Character item, you can find all the characters by page
 
 To start with this project it is highly recommended to check the API website, it is necesary to get the API key and configure it inside the .env file.
@@ -20,4 +19,4 @@ Once you give a check to the API's doc consider to use an converter to get the R
 
 And that will be all for now, to continue with the installation of the project, Enjoy it, and I will be attend for any recommendations of bugs into it.
 
-Happy Coding. Greetings!
+# Happy Coding. Greetings! 
