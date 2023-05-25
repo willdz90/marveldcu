@@ -4,10 +4,10 @@ import { StyledProgressBar,TextGoalMovies } from '../../styles/ProgressBar.style
 export default function ProgressBar({ progress, max }) {
 
     const conteo = parseInt(localStorage.getItem("Movies"));
-    const [ value, setValue ] = useState(
-        typeof conteo === NaN ? 0 : conteo
-    );
 
+    console.log('conteo :>> ', conteo);
+    const [ value, setValue ] = useState(0);
+    
     function getRandomInt(max) {
         return Math.floor(Math.random() * max);
     }
