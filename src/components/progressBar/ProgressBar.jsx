@@ -11,7 +11,7 @@ export default function ProgressBar({ progress, max }) {
             setValue((oldValue) => {
                 const newValue = oldValue + 1;
 
-                if(newValue == 100){
+                if(newValue == 200){
                     clearInterval(interval)
                 }
 
@@ -23,7 +23,7 @@ export default function ProgressBar({ progress, max }) {
   return (
     <>
         <TextGoalMovies>Meta de producción: 200 Peliculas</TextGoalMovies>
-        <StyledProgressBar value={value} max={100}></StyledProgressBar>
+        <StyledProgressBar value={value} max={200}></StyledProgressBar>
         <div>Peliculas producidas: {value}</div>
     </>
   )
