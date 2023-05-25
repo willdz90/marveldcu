@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { StyledProgressBar,TextGoalMovies } from '../../styles/ProgressBar.style.js';
+import { StyledProgressBar,TextGoalMovies, TextGoalSeries } from '../../styles/ProgressBar.style.js';
 
 export default function ProgressBar({ progress, max }) {
 
@@ -11,20 +11,20 @@ export default function ProgressBar({ progress, max }) {
             setValue((oldValue) => {
                 const newValue = oldValue + 1;
 
-                if(newValue == 200){
+                if(newValue == 100){
                     clearInterval(interval)
                 }
 
                 return newValue;
             });
-        }, 50);
-    }, [])
+        }, 7500);
+    }, []);
     
   return (
     <>
-        <TextGoalMovies>Meta de producción: 200 Peliculas</TextGoalMovies>
-        <StyledProgressBar value={value} max={200}></StyledProgressBar>
-        <div>Peliculas producidas: {value}</div>
+        <TextGoalMovies>Meta de producción: 100 Peliculas</TextGoalMovies>
+        <StyledProgressBar value={value} max={100}></StyledProgressBar>
+        <TextGoalMovies>Peliculas producidas: {value}</TextGoalMovies>
     </>
   )
 }

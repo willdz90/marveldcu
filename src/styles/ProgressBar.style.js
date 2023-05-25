@@ -31,5 +31,8 @@ export const TextProgressBar = styled.span`
 `;
 
 export const TextGoalMovies = styled.div`
-    margin: 0;
+    width: 90%;
+    height: 0;
+    display: flex;
+    flex-direction: row-reverse;
 `;

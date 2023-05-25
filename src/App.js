@@ -5,6 +5,7 @@ import {
   QueryClient,
   QueryClientProvider,
 } from "@tanstack/react-query";
+import InitialHome from "./components/Home/InitialHome.jsx";
 
 
 const queryClient = new QueryClient()
@@ -17,6 +18,7 @@ function App() {
       <Router>
         <Header/>
         <Routes>
+          <Route path='/' element={<InitialHome/>}/>
           <Route path='/characters' element={<Home/>}/>
         </Routes>
       </Router>
