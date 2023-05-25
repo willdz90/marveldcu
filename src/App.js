@@ -7,12 +7,14 @@ import {
 } from "@tanstack/react-query";
 import InitialHome from "./components/Home/InitialHome.jsx";
 
-
 const queryClient = new QueryClient()
-
+// console.log(process.env)
+// if(process.env.NODE_ENV === 'production'){
+//   console.log('App running in production mode');
+// }
 
 function App() {
-
+  
   return (
     <QueryClientProvider client={queryClient}>
       <Router>

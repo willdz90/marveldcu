@@ -1,16 +1,13 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
+import "dotenv/config";
 
-
-// const { REACT_APP_SERVER } = process.env;
-const REACT_APP_SERVER = "https://gateway.marvel.com/";
-const REACT_APP_PUBLIC = "84319dd0fede317df25f60367dca2880";
-const REACT_APP_HASH = "e18f405b4993489806185de4fe2553ac";
-const REACT_APP_COMPLEMENTURL = "v1/public/characters";
-const REACT_APP_COMPLEMENTURLDETAILS = "v1/public/characters";
-const REACT_APP_TS = "1684794419"
-
-const urlById = "https://gateway.marvel.com/v1/public/characters/1009146?ts=1684794419&apikey=84319dd0fede317df25f60367dca2880&hash=e18f405b4993489806185de4fe2553ac"
+const {REACT_APP_SERVER} = process.env;
+const {REACT_APP_PUBLIC} = process.env;
+const {REACT_APP_HASH} = process.env;
+const {REACT_APP_COMPLEMENTURL} = process.env;
+const {REACT_APP_COMPLEMENTURLDETAILS} = process.env;
+const {REACT_APP_TS} = process.env;
 
 export async function fetchingData(
         limitInf,
