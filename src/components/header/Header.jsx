@@ -31,7 +31,7 @@ export default function Header() {
               <StyledLink to='/'>HOME</StyledLink>
             </Home>
             <Personajes>
-              <StyledLinkCharacters to="/characters">PERSONAJES</StyledLinkCharacters>
+              <StyledLinkCharacters to="/characters">CHARACTERS</StyledLinkCharacters>
             </Personajes>
           </LeftContainerbar>
           <RightContainerbar>

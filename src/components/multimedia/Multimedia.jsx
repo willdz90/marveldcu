@@ -4,12 +4,17 @@ import { ProgressBarContainer } from '../../styles/Multimedia.style';
 import { VideoContainer } from '../../styles/Multimedia.style';
 import { ImageContainer } from '../../styles/Multimedia.style';
 import poster from '../../assets/poster.jpg';
+import ProgressBar from '../progressBar/ProgressBar';
+import { TextProgressBar } from '../../styles/ProgressBar.style.js';
 
 export default function Multimedia() {
 
   return (
     <MultimediaContainer>
-        <ProgressBarContainer>Barra de Peliculas</ProgressBarContainer>
+        <ProgressBarContainer>
+          <TextProgressBar>PROGRESO DE PELICULAS PRODUCIDAS</TextProgressBar>
+          <ProgressBar progress={"0"} max={"200"}/>
+        </ProgressBarContainer>
         <VideoContainer>
           <iframe 
             width="358" 

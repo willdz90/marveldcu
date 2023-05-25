@@ -8,14 +8,6 @@ import { BgImage } from '../../styles/App.style.js';
 
 export default function Home() {
 
-  const [ isActive, setIsActive ] = useState(false);
-
-  useEffect( () => {
-    setIsActive(true)
-  },[])
-
-  console.log('isActive :>> ', isActive);
-
   return (
     <div>
         <BgImage/>

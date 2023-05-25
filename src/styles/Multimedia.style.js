@@ -16,7 +16,8 @@ export const ProgressBarContainer = styled.div`
     background: rgb(30, 35, 40);
     border-radius: 5px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
 `;
 export const VideoContainer = styled.div`
     display: flex;
