@@ -9,7 +9,6 @@ const {REACT_APP_COMPLEMENTURL} = process.env;
 const {REACT_APP_COMPLEMENTURLDETAILS} = process.env;
 const {REACT_APP_TS} = process.env;
 
-
 export async function fetchingData(
         limitInf,
         limit,
