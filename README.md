@@ -20,4 +20,4 @@ Once you give a check to the API's doc consider to use an converter to get the R
 
 And that will be to continue with the installation of the project, Enjoy it, and I will be attend for any recommendations of bugs into it.
 
-Happy Coding.
+Happy Coding. Greetings!
