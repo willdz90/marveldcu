@@ -1,7 +1,7 @@
 import React from 'react';
 import nombreIzq from '../../assets/nombreIzq.png';
 import nombreDer from '../../assets/nombreDer.png';
-import { ImgName, TitleCard } from '../../styles/CardCharacter.style';
+import { TitleCard } from '../../styles/CardCharacter.style';
 import rightArrow from '../../assets/rightArrow.png';
 import { ModalDiv, 
     ContentDiv, 

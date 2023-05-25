@@ -1,33 +1,42 @@
 import React, { useEffect, useState } from 'react';
-import { StyledProgressBar,TextGoalMovies, ProgressBarContainer } from '../../styles/ProgressBar.style.js';
+import { StyledProgressBar,TextGoalMovies } from '../../styles/ProgressBar.style.js';
 
 export default function ProgressBar({ progress, max }) {
 
-    function stopInterval(interval){
-        clearInterval(interval);
+    const conteo = parseInt(localStorage.getItem("Movies"));
+    const [ value, setValue ] = useState(conteo);
+
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
     }
 
-    const [ value, setValue ] = useState(0);
+    const int = getRandomInt(4);
     
     useEffect(() => {
 
         const interval = setInterval( () => {
             setValue((oldValue) => {
-                const newValue = oldValue + 1;
+                const newValue = oldValue + int;
 
-                if(newValue === 200){
-                    stopInterval(interval)
+                if(newValue === max){
+                    clearInterval(interval);
                 }
+                localStorage.setItem("Movies", newValue);
 
                 return newValue;
             });
-        }, 50);
+        }, 5000);
+
+
     }, []);
+
+    const moviesDone = Math.floor((value / max)*100);
     
   return (
     <>
         <TextGoalMovies>Meta de producción: {max} Peliculas</TextGoalMovies>
-        <StyledProgressBar value={value} max={200}></StyledProgressBar>
+        <StyledProgressBar value={value} max={max}></StyledProgressBar>
+        <TextGoalMovies>Peliculas producidas: {moviesDone}%</TextGoalMovies>
         <TextGoalMovies>Peliculas producidas: {value}</TextGoalMovies>
     </>
   )

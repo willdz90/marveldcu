@@ -31,7 +31,7 @@ export async function fetchingComicDetails(id){
       const comicDetails = await axios.get(
         `${REACT_APP_SERVER}/${REACT_APP_COMPLEMENTURLDETAILS}/${id}?ts=${REACT_APP_TS}&apikey=${REACT_APP_PUBLIC}&hash=${REACT_APP_HASH}`
       );
-      console.log('comicDetails :>> ', comicDetails);
+      
       return comicDetails
     }
   } catch (error) {
@@ -50,10 +50,3 @@ export const useFetchDetails = (id) => {
     refetchOnWindowFocus: false,
   })
 }
-
-// async function favoritesPetsDetails({ id }) {
-//   let dataFavorites =
-//     id && id.map((id) => axios.get(`${REACT_APP_SERVER}/pets/${id}`));
-//   const arrayDetails = await Promise.all(dataFavorites);
-//   return arrayDetails;
-// }

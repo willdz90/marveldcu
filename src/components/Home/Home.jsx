@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import Header from '../header/Header';
-import Pagination from '../pagination/Pagination';
+import React from 'react';
 import Multimedia from '../multimedia/Multimedia';
 import CharacterContainer from '../character/CharacterContainer';
 import { BgImage } from '../../styles/App.style.js';

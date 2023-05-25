@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import { Avatar, Card, ImgName, Info, InfoComics, InfoSeries } from '../../styles/CardCharacter.style';
 import { AvatarContainer, TitleCard, TextDetail } from '../../styles/CardCharacter.style';
-import circulo from '../../assets/circuloExt.png';
 import { AvatarExt } from '../../styles/CardCharacter.style';
 import nombreIzq from '../../assets/nombreIzq.png';
 import nombreDer from '../../assets/nombreDer.png';
 import CardModal from '../character/CardModal.jsx';
-import { useFetchDetails } from '../../functions/Data';
 
 export default function CardCharacter({infoCharacter}) {
 

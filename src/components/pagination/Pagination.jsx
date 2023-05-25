@@ -5,8 +5,6 @@ import { PaginationContainer, PaginationText } from '../../styles/Pagination.sty
 
 export default function Pagination({ limit, limitInf, handlePrevPage, handleNextPage}) {
 
-  // console.log('offset, limit :>> ', offset, limit);
-
   return (
     <PaginationContainer>
       <ArrowPrevPage onClick={ (e) => handlePrevPage(e)}/>

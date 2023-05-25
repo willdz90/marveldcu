@@ -36,6 +36,7 @@ export const TextProgressBar = styled.span`
 `;
 
 export const TextGoalMovies = styled.div`
+    color:  #C89B3C;
     width: 90%;
     height: 0;
     display: flex;

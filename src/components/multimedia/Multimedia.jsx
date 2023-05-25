@@ -1,9 +1,8 @@
 import React from 'react';
-import { ImagePoster, MultimediaContainer } from '../../styles/Multimedia.style';
+import { MultimediaContainer } from '../../styles/Multimedia.style';
 import { ProgressBarContainer } from '../../styles/Multimedia.style';
 import { VideoContainer } from '../../styles/Multimedia.style';
 import { ImageContainer } from '../../styles/Multimedia.style';
-import poster from '../../assets/poster.jpg';
 import ProgressBar from '../progressBar/ProgressBar';
 import { TextProgressBar } from '../../styles/ProgressBar.style.js';
 
@@ -13,7 +12,7 @@ export default function Multimedia() {
     <MultimediaContainer>
         <ProgressBarContainer>
           <TextProgressBar>PROGRESO DE PELICULAS PRODUCIDAS</TextProgressBar>
-          <ProgressBar max={200}/>
+          <ProgressBar max={1000}/>
         </ProgressBarContainer>
         <VideoContainer>
           <iframe 

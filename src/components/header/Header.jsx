@@ -1,9 +1,6 @@
 import React from 'react';
 import './Header.css';
-import { Logo2 } from '../../styles/Logo.style.js';
-import { Logo } from '../../styles/Logo.style.js';
 import logo from "../../assets/logo.png";
-import arrow from "../../assets/arrow.png";
 import notificacion from '../../assets/notificacion.png';
 import config from '../../assets/config.png';
 import { NavBarContainer, 
@@ -11,10 +8,7 @@ import { NavBarContainer,
   RightContainerbar, 
   LogoMarvel, 
   Home,
-  HomeText,
   Personajes,
-  ChangeColor,
-  TextPersonajes,
   StyledLink, StyledLinkCharacters, 
   NotificationIcon, ConfigIcon
 

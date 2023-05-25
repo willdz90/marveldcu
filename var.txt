@@ -1,6 +1,0 @@
-public = 84319dd0fede317df25f60367dca2880
-private = b03369b30d3f15623b62a70580936ae51a56aad2
-
-hash = e18f405b4993489806185de4fe2553ac
-
-endpoint = https://gateway.marvel.com/
