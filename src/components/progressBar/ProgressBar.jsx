@@ -7,7 +7,7 @@ export default function ProgressBar({ progress, max }) {
 
     console.log('conteo :>> ', conteo);
     const [ value, setValue ] = useState(0);
-    
+
     function getRandomInt(max) {
         return Math.floor(Math.random() * max);
     }
