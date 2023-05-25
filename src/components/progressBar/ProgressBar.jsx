@@ -7,8 +7,6 @@ export default function ProgressBar({ progress, max }) {
     const conteo = localStorage.getItem("Movies");
     const moviesCount = conteo == null ? 0 : parseInt(conteo);
 
-    console.log('conteo :>> ', conteo);
-
     const [ value, setValue ] = useState(moviesCount);
 
     function getRandomInt(limitSup) {
