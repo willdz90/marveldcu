@@ -21,12 +21,15 @@ export const StyledProgressBar = styled.progress`
     
     &::-webkit-progress-value{
         background-image: linear-gradient(180deg, #31969D 0%, #65E6F4 31.77%, #24AEBD 66.15%, #1299A8 98.96%);
-
-       -webkit-animation: animateProgress 5s linear infinite;
-        animation: animateProgress 5s linear infinite;
+       -webkit-animation: ${animateProgress} 5s linear infinite;
+        animation: ${animateProgress} 5s linear infinite;
     }
 `;
 
 export const TextProgressBar = styled.span`
     letter-spacing: 1.5px;
+`;
+
+export const TextGoalMovies = styled.div`
+    margin: 0;
 `;

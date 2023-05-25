@@ -17,7 +17,7 @@ export default function Multimedia() {
         </ProgressBarContainer>
         <VideoContainer>
           <iframe 
-            width="358" 
+            width="362" 
             height="218" 
             src="https://www.youtube.com/embed/dagPKfcYHn4" 
             title="Ultimate Invasion #1 Trailer | Marvel Comics"

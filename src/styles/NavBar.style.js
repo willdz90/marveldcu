@@ -1,16 +1,45 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { NavLink } from 'react-router-dom';
+
+export const rotate = keyframes`
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+`;
+
+export const latido = keyframes`
+    0% { border: 2px solid gray; }
+    100% { border: 2px solid transparent; }
+`
+
 
 export const NotificationIcon = styled.img`
     margin: 0 12px;
     width: 18%;
     cursor: pointer;
+    border-radius: 50%;
+    padding: 7px;
+    border: 2px solid transparent;
+
+    &:hover {
+        animation: ${latido} 1s linear infinite
+    }
 `;
 
 export const ConfigIcon = styled.img`
     margin: 0 12px;
     width: 18%;
     cursor: pointer;
+    border: 2px solid transparent;
+    padding: 7px;
+    &:hover {
+        animation: ${rotate} 3s linear infinite;
+    }
 `;
 
 export const NavBarContainer = styled.nav`
