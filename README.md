@@ -2,6 +2,8 @@
 
 This project was created using React, React query and the styles were given by Styled Components.
 
+                  https://marveldcu.vercel.app/
+              
 Initially you are going to redirect to the Homepage, this is a single page to show the multimedia info of the app, next to the homepage in the menu bar into the Character item, you can find all the characters by page
 
 To start with this project it is highly recommended to check the API website, it is necesary to get
