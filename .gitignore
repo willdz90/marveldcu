@@ -11,8 +11,10 @@
 # production
 /build
 
-# misc
+# Ignora los archivos relacionados a API keys
 .env
+
+# misc
 .DS_Store
 .env.local
 .env.development.local
