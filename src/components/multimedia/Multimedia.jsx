@@ -13,7 +13,7 @@ export default function Multimedia() {
     <MultimediaContainer>
         <ProgressBarContainer>
           <TextProgressBar>PROGRESO DE PELICULAS PRODUCIDAS</TextProgressBar>
-          <ProgressBar progress={"0"} max={"200"}/>
+          <ProgressBar max={200}/>
         </ProgressBarContainer>
         <VideoContainer>
           <iframe 

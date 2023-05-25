@@ -3,6 +3,11 @@ import styled, { keyframes } from "styled-components";
 export const animateProgress = keyframes`
     100% { background-position: -100px 0px; }
 `;
+
+export const ProgressBarContainer = styled.div`
+    width: 85%; 
+    height: 15%; 
+`;
     
 export const StyledProgressBar = styled.progress`
     width: 85%; 
